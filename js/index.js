@@ -39,6 +39,6 @@ const touchLeave = node => {
         index = currChild.id === node.id ? i : null;
     }
     app.removeChild(app.childNodes(index));
-    players = players.filter(player => player.id !== node.id);
+    players = players.filter(playerId => playerId !== node.id);
 }
 
