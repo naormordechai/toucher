@@ -29,6 +29,7 @@ const touchActive = e => {
     node.style.width = '50px';
     node.style.height = '50px';
     document.getElementById('app').appendChild(node);
+    document.querySelector('.length').innerHTML = players.length;
 }
 
 const touchLeave = node => {
@@ -42,3 +43,6 @@ const touchLeave = node => {
     players = players.filter(playerId => playerId !== node.id);
 }
 
+const foo = e => {
+    document.querySelector('.length').innerHTML += players.length;
+}
