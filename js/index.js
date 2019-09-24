@@ -17,7 +17,7 @@ function getRandomColor() {
 const touchActive = e => {
     const id = Math.random().toString()
     const node = document.createElement('div');
-    node.addEventListener('ontouchend', () => touchLeave(node))
+    node.addEventListener('touchend', () => touchLeave(node))
     node.setAttribute('id', id);
     node.style.background = 'red';
     node.style.position = 'absolute';
