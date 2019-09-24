@@ -9,20 +9,23 @@
 
     <style>
         body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            position: relative;
+        }
+
+        #app {
             width: 100%;
             height: 100%;
         }
-        .box {
-            width: 300px;
-            margin: 0 auto;
-            max-width: 80%;
-            height: 100px;
-        }
+
     </style>
 </head>
 
-<body ontouchstart="touchActive()">
-    <div class="box"></div>
+<body>
+    <div id="app" onclick="touchActive(event)"></div>
+    <button onclick="spliceNumber()">click</button>
     <script src="js/index.js"></script>
 </body>
 
