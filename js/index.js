@@ -41,8 +41,9 @@ const touchLeave = node => {
     }
     app.removeChild(app.childNodes(index));
     players = players.filter(playerId => playerId !== node.id);
+    document.querySelector('.leave').innerHTML = 'Leave '
 }
 
 const foo = e => {
-    document.querySelector('.length').innerHTML += players.length;
+    document.querySelector('.length').innerHTML = players;
 }
